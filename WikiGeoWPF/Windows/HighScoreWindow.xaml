@@ -1,0 +1,67 @@
+﻿<Window x:Class="WikiGeoWPF.HighScoreWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WikiGeoWPF"
+        mc:Ignorable="d"
+        Title="High Scores" Height="450" Width="450"
+        Background="#546b8e"
+        Foreground="White">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <!--<RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>-->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <!--<ColumnDefinition Width="100"/>-->
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.ColumnSpan="2"
+                   Text="High Scores"
+                   FontSize="25"
+                   FontWeight="Bold"
+                   VerticalAlignment="Center"
+                   Margin="10,0,0,0"/>
+        
+        <DataGrid x:Name="DG_HighScores"
+                  Grid.Row="1"
+                  IsReadOnly="True"
+                  Foreground="Black"
+                  ItemsSource="{Binding}"
+                  AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name"
+                                    Width="*"
+                                    Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Score"
+                                    Width="100"
+                                    Binding="{Binding Score}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <!--
+
+        <TextBlock x:Name="Name1"
+                   Text="Name1"
+                   Grid.Row="1"
+                   Style="{StaticResource HighScoreNames}"/>
+        <TextBlock x:Name="Score1"
+                   Text="0"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   Style="{StaticResource HighScoreValues}"
+                   />-->
+    </Grid>
+
+
+</Window>

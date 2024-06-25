@@ -1,0 +1,58 @@
+﻿<Window x:Class="WikiGeoWPF.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WikiGeoWPF"
+        mc:Ignorable="d"
+        Title="Settings" 
+        Background="#546b8e"
+        Foreground="White"
+        ResizeMode="NoResize"
+        Height="250" Width="450">
+    <Window.Resources>
+        <ResourceDictionary>
+            <Style TargetType="TextBlock">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Margin" Value="20,0,0,0"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Settings"
+                   FontSize="40"
+                   VerticalAlignment="Center"/>
+
+        <TextBlock Text="Language"
+                   Grid.Row="1"/>
+
+        <ComboBox x:Name="comboBoxLangs"
+                  Grid.Column="1"
+                  Grid.Row="1"
+                  FontSize="25" 
+                  Margin="0,0,20,0"
+                  SelectionChanged="ComboBoxLangs_SelectionChanged">
+        </ComboBox>
+
+        <TextBlock Text="View High Scores"
+                   Grid.Row="2"/>
+        <Button Grid.Row="2"
+                Grid.Column="2"
+                Margin="0,10,20,10"
+                Content="View Highscores" Click="Button_Click"/>
+
+
+    </Grid>
+</Window>

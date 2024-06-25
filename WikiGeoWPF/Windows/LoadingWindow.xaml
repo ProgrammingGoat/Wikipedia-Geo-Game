@@ -1,0 +1,28 @@
+﻿<Window x:Class="WikiGeoWPF.LoadingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WikiGeoWPF"
+        mc:Ignorable="d"
+        Title="LoadingWindow" Height="250" Width="400"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="#384ba4"
+        Foreground="White">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Loading..."
+                       FontSize="25"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+        <ProgressBar x:Name="LoadingBar"
+                     IsIndeterminate="True"
+                         Grid.Row="3"
+                         Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
