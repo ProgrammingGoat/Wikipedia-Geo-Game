@@ -24,9 +24,9 @@ namespace WikiGeoWPF
             InitializeComponent();
             List<TestHighScores> highscores = new List<TestHighScores>
             {
-                new TestHighScores("uwu", 69),
-                new TestHighScores("owo", 420),
-                new TestHighScores("awa", 1312)
+                new TestHighScores("not implemented", 42),
+                new TestHighScores("not implemented", 69),
+                new TestHighScores("not implemented", 1337)
             };
 
             DG_HighScores.DataContext = highscores;
