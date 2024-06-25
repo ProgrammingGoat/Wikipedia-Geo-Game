@@ -27,4 +27,6 @@ You have to estimate which location from the options presented at the bottom is 
 - implement persistent high scores
 - implement game history
 
+---
+
 Wikipedia Geo Game is not affiliated with Wikipedia.

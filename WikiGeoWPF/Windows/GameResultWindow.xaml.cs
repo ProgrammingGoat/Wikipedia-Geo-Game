@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -110,17 +111,34 @@ namespace WikiGeoWPF
 
         private void TxtResultTitle1_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            System.Diagnostics.Process.Start(urls[0]);
+            // System.Diagnostics.Process.Start(urls[0]);
+            var psi = new ProcessStartInfo
+            {
+                FileName = urls[0],
+                UseShellExecute = true
+            };
+            Process.Start(psi);
+               
         }
 
         private void TxtResultTitle2_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            System.Diagnostics.Process.Start(urls[1]);
+            var psi = new ProcessStartInfo
+            {
+                FileName = urls[1],
+                UseShellExecute = true
+            };
+            Process.Start(psi);
         }
 
         private void TxtResultTitle3_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            System.Diagnostics.Process.Start(urls[2]);
+            var psi = new ProcessStartInfo
+            {
+                FileName = urls[2],
+                UseShellExecute = true
+            };
+            Process.Start(psi);
         }
     }
 }
