@@ -5,7 +5,7 @@ A project I created during project week at my school in summer of 2022.
 It pulls four random wikipedia articles with geotags from the API, then shows you one of them at the top and three at the bottom.
 You have to estimate which location from the options presented at the bottom is closest to the one at the top.
 
-![Screenshot of the main Window](https://i.imgur.com/CuaYEuP.png)
+![Screenshot of the main Window](https://i.imgur.com/elI9xYX.png)
 
 ## Features
 - Engaging gameplay testing player's geographic knowledge and deductive skills
@@ -18,7 +18,7 @@ You have to estimate which location from the options presented at the bottom is 
 	- French
 	- Simple English
 	- Alemannisch
-	- Plattdüütsch
+	- PlattdÃ¼Ã¼tsch
 - Responsive UI
 - Clickable links in postgame screen
 
